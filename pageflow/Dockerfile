@@ -1,6 +1,6 @@
-FROM ruby:2.3
+FROM ruby:2.7
 
-ENV RAILS_VERSION 4.2.6
+ENV RAILS_VERSION 4.2.11.1
 
 # Install a lot of things :)
 
