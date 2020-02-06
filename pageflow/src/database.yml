@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
-  database: pageflow_prod
-  username: pageflow
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+production:
+  <<: *default
+  host: <%= ENV['MYSQL_HOST'] %>
+  database: <%= ENV['MYSQL_DATABASE'] %>
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
