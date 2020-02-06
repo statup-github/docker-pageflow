@@ -25,8 +25,6 @@ In the `docker run` command pageflow will be installed, this could take a while.
 
 Then you should be able to call http://localhost:3000 in your web browser. Please note that the first Request you make to Pageflow by Browser will take around 10 seconds until you see the Web View.
 
-![](https://media.giphy.com/media/mCxUZJN8i2wrC/giphy.gif)
-
 The default User from pageflows `rake db:seed` is
 
 ```
@@ -44,8 +42,6 @@ Pageflow isn't running properly! This is becuase of several things we still need
 
 Only then we can use the full power of Pageflow
 
-![](https://media.giphy.com/media/LLWP1seiT4fC/giphy.gif)
-
 ## 3. Running Pageflow ##
 
 1. Insert your AWS and Zencoder Credentials in the credentials file before you run the docker run command
@@ -56,4 +52,3 @@ Only then we can use the full power of Pageflow
 Customize your Pageflow and add new plugins and page-types according to:
 [https://github.com/codevise/pageflow/wiki](https://github.com/codevise/pageflow/wiki#extending-pageflow)
 
-![](https://media.giphy.com/media/3xz2Bw12fe9iyG06v6/giphy.gif)
