@@ -2,6 +2,11 @@ FROM ruby:2.7
 
 ENV RAILS_VERSION 4.2.11.1
 
+ENV MYSQL_HOST=mysql
+ENV MYSQL_DATABASE=my_pageflow
+ENV MYSQL_USER=mysql
+ENV MYSQL_PASSWORD=mysql
+
 # Install a lot of things :)
 
 RUN apt-get update && \ 
