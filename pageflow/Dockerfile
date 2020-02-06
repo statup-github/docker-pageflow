@@ -15,9 +15,9 @@ RUN apt-get update && \
   apt-get install -y nodejs --no-install-recommends && \
   rm -rf /var/lib/apt/lists/* && \
   apt-get update && \ 
-  DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y default-mysql-server && \
   apt-get install -y redis-server && \
-  apt-get install -y mysql-client --no-install-recommends && \
+  apt-get install -y default-mysql-client --no-install-recommends && \
   rm -rf /var/lib/apt/lists/* && \
   gem install rails --version "$RAILS_VERSION" 
 
