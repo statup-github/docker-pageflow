@@ -4,8 +4,8 @@ echo "Docker CMD"
 
 echo "Start Services"
 
-echo "start mysql"
-nohup mysqld &
+# echo "start mysql"
+# nohup mysqld &
 
 echo "start redis"
 nohup redis-server &
@@ -18,7 +18,7 @@ cd /var/www/app
 if [ ! -f install.mark ]; then
     echo "Execute first installation!"
 
-    mysqladmin -u root password root
+    # mysqladmin -u root password root
 
     bundle update
 
