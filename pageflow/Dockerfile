@@ -19,6 +19,7 @@ RUN apt-get update && \
   apt-get install -y redis-server && \
   apt-get install -y default-mysql-client --no-install-recommends && \
   rm -rf /var/lib/apt/lists/* && \
+  gem install sprockets -v 3.7.2 && \
   gem install rails --version "$RAILS_VERSION" 
 
 
