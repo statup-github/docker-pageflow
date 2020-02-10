@@ -1,4 +1,4 @@
-FROM ruby:2.6
+FROM ruby:2.4
 
 ENV RAILS_VERSION 4.2.6
 
