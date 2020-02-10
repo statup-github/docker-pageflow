@@ -49,6 +49,7 @@ else
 fi
 
 echo "Starting redis workers"
+sed -i "s/# config.secret_key.*/config.secret_key = ENV[ 'DEVISE_SECRET_KEY' ]/" /var/www/app/config/initializers/devise.rb
 BACKGROUND=yes QUEUE=* rake resque:work RAILS_ENV=production >>  worker1.log &
 BACKGROUND=yes QUEUE=* rake resque:scheduler RAILS_ENV=production >>  worker2.log &
 
