@@ -49,7 +49,7 @@ else
 fi
 
 echo "Starting redis workers"
-BACKGROUND=yes QUEUE=* rake resque:work RAILS_ENV=development >>  worker1.log &
-BACKGROUND=yes QUEUE=* rake resque:scheduler RAILS_ENV=development >>  worker2.log &
+BACKGROUND=yes QUEUE=* rake resque:work RAILS_ENV=production >>  worker1.log &
+BACKGROUND=yes QUEUE=* rake resque:scheduler RAILS_ENV=production >>  worker2.log &
 
 bundle exec rails server -b 0.0.0.0
